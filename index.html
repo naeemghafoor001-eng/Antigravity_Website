@@ -325,7 +325,7 @@
             <div class="section-header text-center">
                 <span class="section-tag">Interactive Tools</span>
                 <h2 class="section-title">Citizen & Legal Service Portal</h2>
-                <p class="section-subtitle">Use our simulated tools to estimate probation or parole eligibility and track the status of current case folders.</p>
+                <p class="section-subtitle">Use our simulated tool to estimate probation or parole eligibility based on legal parameters.</p>
             </div>
 
             <div class="portal-grid">
@@ -381,51 +381,6 @@
                         </div>
                         <p class="result-details" id="result-status-desc">The offender meets the initial requirements. A detailed social background report will be requested by the Court or Parole Board.</p>
                         <button type="button" class="btn btn-outline btn-sm btn-block" id="reset-estimator">Reset Estimator</button>
-                    </div>
-                </div>
-
-                <!-- Case Tracker -->
-                <div class="portal-card glass-card scroll-reveal" id="case-tracker-card">
-                    <h3 class="portal-card-title">🔍 Online Case Status Tracker</h3>
-                    <p class="portal-card-desc">Enter the case ID of the parolee/probationer or their 13-digit CNIC to view current supervision metrics and progress steps.</p>
-                    
-                    <form id="tracker-form" class="portal-form">
-                        <div class="form-group">
-                            <label for="case-id-input">Case ID or CNIC:</label>
-                            <input type="text" id="case-id-input" placeholder="e.g. PPPS-2026-0042 or 35201-XXXXXXX-X" required>
-                            <span class="input-help">Use mock cases: PPPS-2026-0042, PPPS-2026-0118, or PPPS-2026-0789 for demo.</span>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Search Registry</button>
-                    </form>
-
-                    <div class="tracker-result" id="tracker-result" style="display: none;">
-                        <div class="tracker-info-box">
-                            <div class="info-row"><strong>Name:</strong> <span id="track-name">-</span></div>
-                            <div class="info-row"><strong>Type:</strong> <span id="track-type">-</span></div>
-                            <div class="info-row"><strong>Supervising Officer:</strong> <span id="track-officer">-</span></div>
-                            <div class="info-row"><strong>Status:</strong> <span id="track-status" class="status-indicator">-</span></div>
-                        </div>
-                        
-                        <div class="stepper">
-                            <div class="step-item" id="step-1">
-                                <div class="step-num">1</div>
-                                <div class="step-text">Assessment</div>
-                            </div>
-                            <div class="step-item" id="step-2">
-                                <div class="step-num">2</div>
-                                <div class="step-text">Supervision</div>
-                            </div>
-                            <div class="step-item" id="step-3">
-                                <div class="step-num">3</div>
-                                <div class="step-text">Vocational</div>
-                            </div>
-                            <div class="step-item" id="step-4">
-                                <div class="step-num">4</div>
-                                <div class="step-text">Release</div>
-                            </div>
-                        </div>
-
-                        <button type="button" class="btn btn-outline btn-sm btn-block" id="reset-tracker">Search Again</button>
                     </div>
                 </div>
             </div>
