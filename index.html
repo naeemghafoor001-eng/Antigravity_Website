@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Punjab Probation & Parole Service (PP&PS) under the Home Department, Govt. of the Punjab. Non-custodial rehabilitation, parole eligibility estimation, and case status tracking.">
+    <meta name="keywords" content="Punjab Probation, Parole Service, Punjab Home Department, Rehabilitation, Offender Reform, Pakistan, Lahore, Justice System">
+    <meta name="author" content="Government of the Punjab">
+    <title>Punjab Probation & Parole Service | Home Department</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <!-- Header/Navigation -->
+    <header class="navbar" id="main-navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo" id="nav-brand">
+                <svg class="crest-svg" viewBox="0 0 100 100" width="45" height="45">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="3"/>
+                    <path d="M50,15 C60,25 60,45 50,55 C40,45 40,25 50,15 Z" fill="currentColor"/>
+                    <path d="M50,45 C58,52 68,62 55,75 C48,68 45,55 50,45 Z" fill="currentColor" opacity="0.8"/>
+                    <path d="M50,45 C42,52 32,62 45,75 C52,68 55,55 50,45 Z" fill="currentColor" opacity="0.8"/>
+                    <circle cx="50" cy="50" r="6" fill="#ffc107"/>
+                </svg>
+                <div class="brand-text">
+                    <span class="brand-main">PUNJAB PROBATION</span>
+                    <span class="brand-sub">& PAROLE SERVICE</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#interactive-suite" class="nav-link">Portal Suite</a>
+                <a href="#modernization" class="nav-link">Digital Reforms</a>
+                <a href="#timeline" class="nav-link">Legislation</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="#interactive-suite" class="btn btn-sm btn-primary" id="cta-portal">Citizen Portal</a>
+                <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <nav class="drawer-menu">
+            <a href="#overview" class="drawer-link">Overview</a>
+            <a href="#services" class="drawer-link">Services</a>
+            <a href="#interactive-suite" class="drawer-link">Portal Suite</a>
+            <a href="#modernization" class="drawer-link">Digital Reforms</a>
+            <a href="#timeline" class="drawer-link">Legislation</a>
+            <a href="#contact" class="drawer-link">Contact</a>
+            <a href="#interactive-suite" class="drawer-btn">Citizen Portal</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge badge-green-glow">Home Department, Govt. of Punjab</span>
+                <h1 class="hero-title animate-slide-up">Reformation Over Incarceration</h1>
+                <p class="hero-lead animate-slide-up-delay">We foster community safety, reduce recidivism, and rehabilitate offenders through structured non-custodial supervision, vocational training, and social reintegration.</p>
+                <div class="hero-ctas animate-slide-up-delay-2">
+                    <a href="#interactive-suite" class="btn btn-lg btn-primary">Citizen Services Portal</a>
+                    <a href="#services" class="btn btn-lg btn-outline">Explore Reintegration Path</a>
+                </div>
+            </div>
+            <div class="hero-visual animate-fade-in-slow">
+                <div class="glass-card hero-glass-card">
+                    <div class="card-header">
+                        <span class="pulse-indicator"></span>
+                        <span>PP&PS Real-Time Supervision</span>
+                    </div>
+                    <div class="supervision-stats">
+                        <div class="metric-row">
+                            <span class="metric-label">Active Probationers:</span>
+                            <span class="metric-value color-green">48,290</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">Parolees Supervised:</span>
+                            <span class="metric-value color-gold">8,740</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">Success Rate:</span>
+                            <span class="metric-value">91.8%</span>
+                        </div>
+                        <div class="chart-mock">
+                            <div class="bar bar-1" style="--height: 75%"></div>
+                            <div class="bar bar-2" style="--height: 82%"></div>
+                            <div class="bar bar-3" style="--height: 91.8%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#overview" aria-label="Scroll Down">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Impact & Metrics Section -->
+    <section class="overview-section" id="overview">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Key Impact Metrics</span>
+                <h2 class="section-title">Serving Justice, Enabling Growth</h2>
+                <p class="section-subtitle">We transition offenders from confinement back into the community, enabling them to become productive citizens while reducing the burden on prisons.</p>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card" id="metric-probation">
+                    <div class="metric-icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="2" fill="none">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="metric-num" data-val="48290">48,290</h3>
+                    <p class="metric-title">Active Probationers</p>
+                    <p class="metric-desc">Court-ordered community supervision allowing offenders to remain with family and continue work.</p>
+                </div>
+                <div class="metric-card" id="metric-parole">
+                    <div class="metric-icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="2" fill="none">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
+                        </svg>
+                    </div>
+                    <h3 class="metric-num" data-val="8740">8,740</h3>
+                    <p class="metric-title">Active Parolees</p>
+                    <p class="metric-desc">Condition-based executive release for reformed prisoners serving the rest of sentence in community.</p>
+                </div>
+                <div class="metric-card" id="metric-success">
+                    <div class="metric-icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="2" fill="none">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="metric-num" data-val="92">91.8%</h3>
+                    <p class="metric-title">Rehabilitation Rate</p>
+                    <p class="metric-desc">Proportion of individuals under supervision who successfully complete terms without recidivating.</p>
+                </div>
+                <div class="metric-card" id="metric-community">
+                    <div class="metric-icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="2" fill="none">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="metric-num" data-val="1250000">1.25M+</h3>
+                    <p class="metric-title">Community Service Hours</p>
+                    <p class="metric-desc">Constructive community and public works completed by probationers under supervisory officers.</p>
+                </div>
+            </div>
+            
+            <div class="dg-message glass-card">
+                <div class="dg-avatar">
+                    <svg viewBox="0 0 100 100" class="avatar-svg">
+                        <circle cx="50" cy="50" r="48" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2"/>
+                        <path d="M50 35A12 12 0 1 0 50 11a12 12 0 1 0 0 24Z" fill="#94a3b8"/>
+                        <path d="M22 78c0-15 12-24 28-24s28 9 28 24v8H22v-8Z" fill="#64748b"/>
+                    </svg>
+                </div>
+                <div class="dg-body">
+                    <blockquote>"Community corrections provide a humanized path to justice. By giving reformed individuals a second chance under structured parole and probation, we do not just reduce congestion in prisons; we build law-abiding households and a safer Punjab."</blockquote>
+                    <p class="dg-author">Director General, Punjab Probation & Parole Service</p>
+                    <p class="dg-designation">Home Department, Government of the Punjab</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Tab Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Comparative Services</span>
+                <h2 class="section-title">Probation vs Parole Services</h2>
+                <p class="section-subtitle">Understanding the two distinct streams of rehabilitation and community supervision handled by the department.</p>
+            </div>
+
+            <div class="tabs-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" id="tab-probation-btn">
+                        <span class="tab-icon">⚖️</span>
+                        <span class="tab-text">Probation (Judicial Stream)</span>
+                    </button>
+                    <button class="tab-btn" id="tab-parole-btn">
+                        <span class="tab-icon">🔓</span>
+                        <span class="tab-text">Parole (Executive Stream)</span>
+                    </button>
+                </div>
+
+                <div class="tab-panes">
+                    <!-- Probation Pane -->
+                    <div class="tab-pane active" id="pane-probation">
+                        <div class="service-detail-grid">
+                            <div class="detail-content">
+                                <h3 class="pane-title">Alternative to Imprisonment</h3>
+                                <p class="pane-text">Probation is a judicial mechanism granted by the court at the time of sentencing. Instead of being sent to prison, eligible first-time offenders of minor offenses are placed under the supervision of a Probation Officer inside their community.</p>
+                                
+                                <h4 class="sub-heading">Key Parameters:</h4>
+                                <ul class="params-list">
+                                    <li><strong>Authority:</strong> Judicial Magistrate or Trial Court</li>
+                                    <li><strong>Eligibility:</strong> First-time offenders, minor crimes, positive social background inquiry</li>
+                                    <li><strong>Supervision:</strong> 1 to 3 years of mandatory check-ins, counselings, and local community service.</li>
+                                    <li><strong>Objective:</strong> Prevention of criminal contamination from hardened prisoners in jails.</li>
+                                </ul>
+
+                                <div class="flow-steps">
+                                    <div class="flow-step">
+                                        <span class="step-circle">1</span>
+                                        <span class="step-label">Court Order</span>
+                                    </div>
+                                    <div class="flow-step">
+                                        <span class="step-circle">2</span>
+                                        <span class="step-label">Officer Assessment</span>
+                                    </div>
+                                    <div class="flow-step">
+                                        <span class="step-circle">3</span>
+                                        <span class="step-label">Community Supervision</span>
+                                    </div>
+                                    <div class="flow-step">
+                                        <span class="step-circle">4</span>
+                                        <span class="step-label">Rehabilitation</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-graphic bg-green-gradient">
+                                <div class="graphic-card">
+                                    <div class="icon-wrap">🛡️</div>
+                                    <h4>Judicial Protection</h4>
+                                    <p>Probation preserves jobs, family structures, and mental health, reducing state spending on prisons and saving futures.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Parole Pane -->
+                    <div class="tab-pane" id="pane-parole">
+                        <div class="service-detail-grid">
+                            <div class="detail-content">
+                                <h3 class="pane-title">Conditional Release from Prison</h3>
+                                <p class="pane-text">Parole is an executive release program where a prisoner who has served a significant portion of their sentence showing good conduct is allowed to serve the remainder of their term in the community, under the supervision of a Parole Officer.</p>
+                                
+                                <h4 class="sub-heading">Key Parameters:</h4>
+                                <ul class="params-list">
+                                    <li><strong>Authority:</strong> Releasing Authority / Parole Board (Home Department)</li>
+                                    <li><strong>Eligibility:</strong> Minimum time served (usually 1/3rd or 1/2 of sentence), excellent moral conduct in jail, recommendations from jail superintendent</li>
+                                    <li><strong>Supervision:</strong> Employment placement, periodic reports, strict geographical boundaries</li>
+                                    <li><strong>Objective:</strong> Reintegration, transition preparation, and reducing prison overcrowding.</li>
+                                </ul>
+
+                                <div class="flow-steps">
+                                    <div class="flow-step">
+                                        <span class="step-circle">1</span>
+                                        <span class="step-label">Jail Recommendation</span>
+                                    </div>
+                                    <div class="flow-step">
+                                        <span class="step-circle">2</span>
+                                        <span class="step-label">Board Evaluation</span>
+                                    </div>
+                                    <div class="flow-step">
+                                        <span class="step-circle">3</span>
+                                        <span class="step-label">Employment Release</span>
+                                    </div>
+                                    <div class="flow-step">
+                                        <span class="step-circle">4</span>
+                                        <span class="step-label">Full Discharge</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-graphic bg-gold-gradient">
+                                <div class="graphic-card">
+                                    <div class="icon-wrap">🔑</div>
+                                    <h4>Conditional Freedom</h4>
+                                    <p>Parole motivates prisoners to follow rules and seek reform, knowing that good behavior paves a verified path to community release.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Citizen Services & Interactive Portal Suite -->
+    <section class="interactive-suite-section" id="interactive-suite">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Interactive Tools</span>
+                <h2 class="section-title">Citizen & Legal Service Portal</h2>
+                <p class="section-subtitle">Use our simulated tools to estimate probation or parole eligibility and track the status of current case folders.</p>
+            </div>
+
+            <div class="portal-grid">
+                <!-- Eligibility Estimator -->
+                <div class="portal-card glass-card scroll-reveal" id="eligibility-estimator-card">
+                    <h3 class="portal-card-title">⚖️ Case Eligibility Estimator</h3>
+                    <p class="portal-card-desc">Answer key legal parameters to estimate the likelihood of probation recommendations or parole boards reviews.</p>
+                    
+                    <form id="estimator-form" class="portal-form">
+                        <div class="form-group">
+                            <label for="estimator-type">Select Assessment Stream:</label>
+                            <select id="estimator-type" required>
+                                <option value="probation">Probation (Court Sentenced)</option>
+                                <option value="parole">Parole (Prison Reintegration)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="offense-type">Offense Nature / Category:</label>
+                            <select id="offense-type" required>
+                                <option value="minor">Minor/First Offense (e.g., Simple Theft, Minor Trespass)</option>
+                                <option value="medium">Medium Offense (e.g., Financial Dispute, Property Damage)</option>
+                                <option value="serious">Heinous/Serious Offense (e.g., Violent Crime, Narcotics Trafficking)</option>
+                            </select>
+                        </div>
+
+                        <!-- Conditionally shown for Parole -->
+                        <div class="form-group" id="group-sentence-served" style="display: none;">
+                            <label for="sentence-served">Portion of Sentence Served in Prison:</label>
+                            <select id="sentence-served">
+                                <option value="less-third">Less than 1/3 of the sentence</option>
+                                <option value="third-half">Between 1/3 and 1/2 of the sentence</option>
+                                <option value="more-half">More than 1/2 of the sentence</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="offender-conduct">Offender's Conduct & Character Record:</label>
+                            <select id="offender-conduct" required>
+                                <option value="excellent">Excellent (Reformed, Active in Education/Work)</option>
+                                <option value="satisfactory">Satisfactory (No disciplinary issues)</option>
+                                <option value="poor">Poor (Disciplined for bad behavior/violence)</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Assess Eligibility</button>
+                    </form>
+
+                    <div class="estimator-result" id="estimator-result" style="display: none;">
+                        <div class="result-header">
+                            <span class="result-badge" id="result-status-badge">Eligible</span>
+                            <h4 id="result-status-title">Highly Likely Recommendation</h4>
+                        </div>
+                        <p class="result-details" id="result-status-desc">The offender meets the initial requirements. A detailed social background report will be requested by the Court or Parole Board.</p>
+                        <button type="button" class="btn btn-outline btn-sm btn-block" id="reset-estimator">Reset Estimator</button>
+                    </div>
+                </div>
+
+                <!-- Case Tracker -->
+                <div class="portal-card glass-card scroll-reveal" id="case-tracker-card">
+                    <h3 class="portal-card-title">🔍 Online Case Status Tracker</h3>
+                    <p class="portal-card-desc">Enter the case ID of the parolee/probationer or their 13-digit CNIC to view current supervision metrics and progress steps.</p>
+                    
+                    <form id="tracker-form" class="portal-form">
+                        <div class="form-group">
+                            <label for="case-id-input">Case ID or CNIC:</label>
+                            <input type="text" id="case-id-input" placeholder="e.g. PPPS-2026-0042 or 35201-XXXXXXX-X" required>
+                            <span class="input-help">Use mock cases: PPPS-2026-0042, PPPS-2026-0118, or PPPS-2026-0789 for demo.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Search Registry</button>
+                    </form>
+
+                    <div class="tracker-result" id="tracker-result" style="display: none;">
+                        <div class="tracker-info-box">
+                            <div class="info-row"><strong>Name:</strong> <span id="track-name">-</span></div>
+                            <div class="info-row"><strong>Type:</strong> <span id="track-type">-</span></div>
+                            <div class="info-row"><strong>Supervising Officer:</strong> <span id="track-officer">-</span></div>
+                            <div class="info-row"><strong>Status:</strong> <span id="track-status" class="status-indicator">-</span></div>
+                        </div>
+                        
+                        <div class="stepper">
+                            <div class="step-item" id="step-1">
+                                <div class="step-num">1</div>
+                                <div class="step-text">Assessment</div>
+                            </div>
+                            <div class="step-item" id="step-2">
+                                <div class="step-num">2</div>
+                                <div class="step-text">Supervision</div>
+                            </div>
+                            <div class="step-item" id="step-3">
+                                <div class="step-num">3</div>
+                                <div class="step-text">Vocational</div>
+                            </div>
+                            <div class="step-item" id="step-4">
+                                <div class="step-num">4</div>
+                                <div class="step-text">Release</div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-outline btn-sm btn-block" id="reset-tracker">Search Again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Reforms & IT Initiatives Section -->
+    <section class="modernization-section" id="modernization">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Digital Reforms</span>
+                <h2 class="section-title">Digitalizing Community Corrections</h2>
+                <p class="section-subtitle">Under the Home Department initiatives, the department is executing smart governance systems to ensure transparent supervision.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass-card">
+                    <div class="feature-icon bg-green-glow">
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h4>OMIS Dashboard</h4>
+                    <p>The <strong>Offenders Management Information System (OMIS)</strong> acts as a unified digital repository of all parolees and probationers, tracking demographics, court documents, and officer remarks.</p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon bg-gold-glow">
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h4>E-Office Implementation</h4>
+                    <p>Transitioning departmental operations online. Approval chains for reports, legal opinions, and court recommendations are processed digitally to eliminate paper delays.</p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon bg-green-glow">
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h4>PMS App Integration</h4>
+                    <p>The <strong>Project Management System App</strong> is used by field officers to log geo-tagged attendance, submit check-in compliance logs, and manage inventory seamlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legislative & Legal History Section -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Evolution</span>
+                <h2 class="section-title">Legislative History & Framework</h2>
+                <p class="section-subtitle">Our structural operations are supported by a strong set of criminal rehabilitation enactments in Punjab.</p>
+            </div>
+
+            <div class="timeline-wrap">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item left scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-year">1926</span>
+                        <h4>Good Conduct Prisoners' Release Act</h4>
+                        <p>Introduced the foundational legal release mechanism in the region. Permitted the conditional release of well-behaved prisoners under supervisor guardianship before their full term.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-year">1960</span>
+                        <h4>Probation of Offenders Ordinance</h4>
+                        <p>Empowered the judiciary to utilize probation as an alternative sentence. Formulated standard check-in schedules, conditions of release, and created professional probation officer positions.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-year">2019</span>
+                        <h4>Punjab Probation & Parole Services Act</h4>
+                        <p>A milestone modernizing the service. Merged probation and parole divisions into an unified modern department, structured officer cadres, and digitized database standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Feedback Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact Directorate General</h2>
+                <p class="section-subtitle">Reach out for information, official verifications, or submit a request for compliance checks.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info cards -->
+                <div class="contact-info">
+                    <div class="info-card glass-card">
+                        <div class="icon-circle">📍</div>
+                        <div class="info-details">
+                            <h5>Office Address</h5>
+                            <p>Government Quarter, Near Salman Park, Begumpura, Baghbanpura, Lahore, Punjab</p>
+                        </div>
+                    </div>
+                    <div class="info-card glass-card">
+                        <div class="icon-circle">📞</div>
+                        <div class="info-details">
+                            <h5>Department Helpline</h5>
+                            <p>0317 1115744 / (042) 99250123</p>
+                        </div>
+                    </div>
+                    <div class="info-card glass-card">
+                        <div class="icon-circle">✉️</div>
+                        <div class="info-details">
+                            <h5>Official Email</h5>
+                            <p>info.ppps@punjab.gov.pk</p>
+                        </div>
+                    </div>
+                    <div class="info-card glass-card">
+                        <div class="icon-circle">⏰</div>
+                        <div class="info-details">
+                            <h5>Working Hours</h5>
+                            <p>Monday - Friday: 09:00 AM - 05:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="contact-form-container glass-card">
+                    <h4>Inquiry & Feedback Form</h4>
+                    <form id="contact-form" class="portal-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Full Name</label>
+                                <input type="text" id="contact-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email Address</label>
+                                <input type="email" id="contact-email" placeholder="example@domain.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Inquiry Subject</label>
+                            <select id="contact-subject" required>
+                                <option value="general">General Inquiries</option>
+                                <option value="status">Case Update Query</option>
+                                <option value="legal">Legal & Advocacy</option>
+                                <option value="feedback">Website Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" rows="4" placeholder="Describe your request in detail..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="contact-submit-btn">Send Message</button>
+                    </form>
+                    <div class="form-success-msg" id="form-success" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h5>Inquiry Submitted Successfully</h5>
+                        <p>Thank you for contacting us. Our representative will contact you via email or phone within 48 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="brand-logo footer-logo">
+                    <svg class="crest-svg" viewBox="0 0 100 100" width="35" height="35">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="3"/>
+                        <path d="M50,15 C60,25 60,45 50,55 C40,45 40,25 50,15 Z" fill="currentColor"/>
+                        <path d="M50,45 C58,52 68,62 55,75 C48,68 45,55 50,45 Z" fill="currentColor" opacity="0.8"/>
+                        <path d="M50,45 C42,52 32,62 45,75 C52,68 55,55 50,45 Z" fill="currentColor" opacity="0.8"/>
+                        <circle cx="50" cy="50" r="6" fill="#ffc107"/>
+                    </svg>
+                    <span>Punjab Probation & Parole Service</span>
+                </div>
+                <p>Attached department of the Home Department, Government of the Punjab, Pakistan. Committed to community-based corrections and modern judicial rehabilitation.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h5>Useful Links</h5>
+                <ul>
+                    <li><a href="https://punjab.gov.pk" target="_blank" rel="noopener">Government of the Punjab</a></li>
+                    <li><a href="https://home.punjab.gov.pk" target="_blank" rel="noopener">Home Department</a></li>
+                    <li><a href="#overview">Impact Statistics</a></li>
+                    <li><a href="#services">Reintegration Process</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Punjab Probation & Parole Service. All Rights Reserved. Designed in compliance with Digital Governance Policy, Punjab.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
